@@ -68,7 +68,7 @@ function Header() {
           <button className="hover:bg-gray-900 px-6 p-4 rounded-full ring-1 hover:text-white transition">
             <Link
               // className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-              to="https://s32.picofile.com/file/8481587218/Arezoo_Shahabi.pdf.html"
+              to="https://s32.picofile.com/file/8481588776/ArezooSH.pdf.html"
               target="_blank"
             >
               Download CV
