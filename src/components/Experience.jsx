@@ -4,20 +4,20 @@ import PicTik from "../assets/freepik//tik.png";
 
 // data
 const Data = [
-  { id: 1, pic: PicTik, title: "Html" },
-  { id: 2, pic: PicTik, title: "Css" },
-  { id: 3, pic: PicTik, title: "Tailwind" },
-  { id: 4, pic: PicTik, title: "Javascript" },
-  { id: 5, pic: PicTik, title: "Typescript" },
-  { id: 6, pic: PicTik, title: "ReactJs" },
+  { id: 1, Experience: "advanced", pic: PicTik, title: "Html" },
+  { id: 2, Experience: "advanced", pic: PicTik, title: "Css" },
+  { id: 3, Experience: "advanced", pic: PicTik, title: "Tailwind" },
+  { id: 4, Experience: "advanced", pic: PicTik, title: "Javascript" },
+  { id: 5, Experience: "advanced", pic: PicTik, title: "Typescript" },
+  { id: 6, Experience: "advanced", pic: PicTik, title: "ReactJs" },
 ];
 
 // dataBack
 
 const dataBack = [
-  { id: 1, pic: PicTik, title: "Nod.jd" },
-  { id: 2, pic: PicTik, title: "Next" },
-  { id: 3, pic: PicTik, title: "Nod.js" },
+  { id: 1, Experience: "beginner", pic: PicTik, title: "Nod.jd" },
+  { id: 2, Experience: "beginner", pic: PicTik, title: "Next" },
+  { id: 3, Experience: "beginner", pic: PicTik, title: "Nod.js" },
 ];
 const Experience = () => {
   return (
@@ -40,6 +40,7 @@ const Experience = () => {
               <ExprerienceItems
                 pic={item.pic}
                 // skill={item.title}
+                Experience={item.Experience}
                 key={index.id}
               >
                 {item.title}
@@ -59,7 +60,7 @@ const Experience = () => {
             {dataBack.map((item, index) => (
               <ExprerienceItems
                 pic={item.pic}
-                // skill={item.title}
+                Experience={item.Experience}
                 key={index.id}
               >
                 {item.title}

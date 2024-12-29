@@ -38,7 +38,7 @@ function Header() {
       </div>
       <div className="flex flex-col justify-center items-center gap-5 p-32">
         <div className="font-bold text-3xl text-gray-700">
-          Hello I am
+          Hi, I'm
           {/* animtype */}
           <TypeAnimation
             sequence={[
@@ -75,7 +75,13 @@ function Header() {
             </Link>
           </button>
           <button className="bg-gray-700 hover:bg-slate-900 px-6 p-4 border rounded-full text-white transition">
-            Contact info
+            <Link
+              // className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+              to="mailto:arezooshahabi@gmail.com"
+              target="_blank"
+            >
+              Contact info
+            </Link>
           </button>
         </div>
         <div className="flex gap-2">

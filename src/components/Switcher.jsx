@@ -31,6 +31,7 @@ const Switcher = () => {
           document.documentElement.className = "dark";
         }
         break;
+      // rtl
       case "layout":
         if (event.target?.innerText === "LTR") {
           document.documentElement.dir = "ltr";
@@ -53,15 +54,17 @@ const Switcher = () => {
             id="chk"
             onClick={(event) => changeMode("mode", event)}
           />
-          <label
+          {/* dark mode */}
+
+          {/* <label
             className="flex justify-between items-center bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 p-1 rounded-full w-14 h-8 cursor-pointer label"
-            htmlFor=""
+            htmlFor="chk"
           >
             <FiMoon className="w-[18px] h-[18px] text-yellow-500" />
             <FiSun className="w-[18px] h-[18px] text-yellow-500" />
 
             <span className="top-[2px] left-[2px] absolute bg-white dark:bg-slate-900 rounded-full w-7 h-7 ball"></span>
-          </label>
+          </label> */}
         </span>
       </div>
 
