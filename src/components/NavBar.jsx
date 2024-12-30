@@ -14,113 +14,16 @@ const NavBar = () => {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
-    activateMenu();
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 80);
     });
   }, []);
 
-  const getClosest = (elem, selector) => {
-    // Element.matches() polyfill
-    if (!Element.prototype.matches) {
-      Element.prototype.matches =
-        Element.prototype.matchesSelector ||
-        Element.prototype.mozMatchesSelector ||
-        Element.prototype.msMatchesSelector ||
-        Element.prototype.oMatchesSelector ||
-        Element.prototype.webkitMatchesSelector ||
-        function (s) {
-          var matches = (this.document || this.ownerDocument).querySelectorAll(
-              s
-            ),
-            i = matches.length;
-          while (--i >= 0 && matches.item(i) !== this) {}
-          return i > -1;
-        };
-    }
-
-    // Get the closest matching element
-    for (; elem && elem !== document; elem = elem.parentNode) {
-      if (elem.matches(selector)) return elem;
-    }
-    return null;
-  };
-
-  const activateMenu = () => {
-    var menuItems = document.getElementsByClassName("sub-menu-item");
-    if (menuItems) {
-      var matchingMenuItem = null;
-      for (var idx = 0; idx < menuItems.length; idx++) {
-        if (menuItems[idx].href === window.location.href) {
-          matchingMenuItem = menuItems[idx];
-        }
-      }
-
-      if (matchingMenuItem) {
-        matchingMenuItem.classList.add("active");
-
-        var immediateParent = getClosest(matchingMenuItem, "li");
-
-        if (immediateParent) {
-          immediateParent.classList.add("active");
-        }
-
-        var parent = getClosest(immediateParent, ".child-menu-item");
-        if (parent) {
-          parent.classList.add("active");
-        }
-
-        var parent = getClosest(parent || immediateParent, ".parent-menu-item");
-
-        if (parent) {
-          parent.classList.add("active");
-
-          var parentMenuitem = parent.querySelector(".menu-item");
-          if (parentMenuitem) {
-            parentMenuitem.classList.add("active");
-          }
-
-          var parentOfParent = getClosest(parent, ".parent-parent-menu-item");
-          if (parentOfParent) {
-            parentOfParent.classList.add("active");
-          }
-        } else {
-          var parentOfParent = getClosest(
-            matchingMenuItem,
-            ".parent-parent-menu-item"
-          );
-          if (parentOfParent) {
-            parentOfParent.classList.add("active");
-          }
-        }
-      }
-    }
-  };
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    if (document.getElementById("navigation")) {
-      const anchorArray = Array.from(
-        document.getElementById("navigation").getElementsByTagName("a")
-      );
-      anchorArray.forEach((element) => {
-        element.addEventListener("click", (elem) => {
-          const target = elem.target.getAttribute("href");
-          if (target !== "") {
-            if (elem.target.nextElementSibling) {
-              var submenu = elem.target.nextElementSibling.nextElementSibling;
-              submenu.classList.toggle("open");
-            }
-          }
-        });
-      });
-    }
-  };
-  // end scroll
   return (
     <div
       className={`${
         scroll ? " bg-white  border border-gray-200  " : "bg-transparent"
-      } defaultscroll is-sticky
+      } default scroll is-sticky
       z-[999] fixed flex justify-between items-center  px-4 w-full text-gray-700`}
     >
       <div className="mx-20">
