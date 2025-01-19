@@ -9,7 +9,7 @@ function Header() {
   return (
     <header
       name="home"
-      className="relative grid grid-cols-1 md:grid-cols-2 home"
+      className="relative grid grid-cols-1 lg:grid-cols-2 home"
     >
       <div
         style={{
@@ -20,16 +20,16 @@ function Header() {
         }}
         className="relative flex justify-center items-center p-20 md:p-32"
       >
-        <div className="top-52 md:top-40 z-50 absolute bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 m-3 p-4 rounded-lg w-44 text-center md:-start-0 start-0">
+        <div className="md:block top-52 md:top-40 z-50 hidden bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 m-3 p-4 rounded-lg w-44 text-center hi md:-start-0 start-0">
           <h6 className="font-semibold">FrontEnd Developer</h6>
           <h6 className="mt-1 text-slate-400 text-sm">3+ Years Experience</h6>
         </div>
         <img
           src={Pic1}
-          className="relative z-1 shadow-2xl rounded-full h-[500px]"
+          className="relative z-1 shadow-2xl rounded-full sm:h-[300px] md:h-[400px] lg:h-[500px] d-[200px"
           alt=""
         />
-        <div className="-bottom-10 lg:bottom-36 absolute bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 m-3 p-4 rounded-lg w-44 text-center -end-0 md:-end-0">
+        <div className="md:block -bottom-10 lg:bottom-36 absolute hidden bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-800 m-3 p-4 rounded-lg w-44 text-center -end-0 md:-end-0">
           <span className="mb-0 font-medium text-3xl">
             <CountUp end={10} className="font-bold counter-value" />+
           </span>

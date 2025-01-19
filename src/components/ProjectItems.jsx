@@ -12,12 +12,12 @@ const ProjectItems = ({ pic, title, Github }) => {
       <div className="font-bold text-2xl text-gray-900 md:text-4xl">
         {title}
       </div>
-      <div className="space-x-5 grid grid-cols-2 px-10">
-        <button className="hover:bg-gray-800 p-2 md:p-4 rounded-full ring-1 text-xl :md:text-xl hover:text-white transition">
+      <div className="gap-2 space-x-5 grid grid-cols-2">
+        <button className="lg:block md:hidden hover:bg-gray-800 p-2 md:p-4 rounded-full ring-1 md:w-32 text-xl :md:text-xl hover:text-white transition">
           {Github}
         </button>
-        <button className="hover:bg-gray-800 p-2 md:p-4 rounded-full ring-1 text-xl hover:text-white transition">
-          Live Demo
+        <button className="hover:bg-gray-800 p-3 md:p-4 rounded-full ring-1 md:w-32 text-xl hover:text-white transition">
+          Live-Demo
         </button>
       </div>
     </div>

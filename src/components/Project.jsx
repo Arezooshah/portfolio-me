@@ -1,10 +1,10 @@
 import React from "react";
 import pic1 from "../assets/pic/p1.png";
-import pic2 from "../assets/pic/p2.png";
-import pic3 from "../assets/pic/p3.png";
-import pic4 from "../assets/pic/p4.png";
-import pic5 from "../assets/pic/p5.png";
-import pic6 from "../assets/pic/p6.png";
+import pic2 from "../assets/freepik/p2.png";
+import pic3 from "../assets/freepik/p3.png";
+import pic4 from "../assets/freepik/p4.png";
+import pic5 from "../assets/freepik/p5.png";
+import pic6 from "../assets/freepik/p6.png";
 import ProjectItems from "./ProjectItems";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
@@ -18,7 +18,7 @@ const data = [
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/academy-react-winder402/New-Marfa"
+        to="https://github.com/Arezooshah/Website-MARFA"
         target="_blank"
       >
         Github
@@ -33,7 +33,7 @@ const data = [
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/Arezooshah"
+        to="https://github.com/Arezooshah/Panel-Admin-MARFA"
         target="_blank"
       >
         Github
@@ -48,7 +48,7 @@ const data = [
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/academy-react-winder402/New-Marfa"
+        to="https://github.com/Arezooshah/Game-hub"
         target="_blank"
       >
         Github
@@ -63,7 +63,7 @@ const data = [
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/academy-react-winder402/New-Marfa"
+        to="https://github.com/Arezooshah/App-search"
         target="_blank"
       >
         Github
@@ -79,7 +79,7 @@ const data = [
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/Arezooshah"
+        to="https://github.com/Arezooshah/example-of-the-Mediseh-site"
         target="_blank"
       >
         Github
@@ -94,7 +94,7 @@ const data = [
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/Arezooshah"
+        to="https://github.com/Arezooshah/Sample-site-React"
         target="_blank"
       >
         Github
@@ -109,7 +109,7 @@ export default function Project() {
     <div name="projects" className="p-5 md:p-32 text-center">
       <div className="pt-2 text-gray-500 text-lg">Browse my recent</div>
       <div className="py-5 font-bold text-5xl text-gray-900">projects</div>
-      <div className="gap-3 md:gap-5 grid grid-cols-1 md:grid-cols-3 md:py-10 p-10">
+      <div className="gap-3 md:gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 p-10">
         {/* map */}
         {data.map((item, index) => (
           <ProjectItems
