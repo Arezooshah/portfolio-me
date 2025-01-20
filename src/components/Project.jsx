@@ -1,13 +1,13 @@
 import React from "react";
 import pic1 from "../assets/pic/p1.png";
 import pic2 from "../assets/freepik/p2.png";
-import pic3 from "../assets/freepik/p3.png";
+import pic3 from "../assets/freepik/hero1.png";
 import pic4 from "../assets/freepik/p4.png";
 import pic5 from "../assets/freepik/p5.png";
 import pic6 from "../assets/freepik/p6.png";
 import ProjectItems from "./ProjectItems";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub,FaExternalLinkSquareAlt } from "react-icons/fa";
 
 // data
 const data = [
@@ -40,11 +40,36 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+   
   },
   {
     id: 3,
     pic: pic3,
     title: "Project Three",
+    Github: (
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="https://github.com/Arezooshah/App-search"
+        target="_blank"
+      >
+        Github
+        <FaGithub size={30} />
+      </Link>
+    ),
+    Demo:(
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="https://programming-company.netlify.app/"
+        target="_blank"
+      >
+                <FaExternalLinkSquareAlt size={30} />
+      </Link>
+    )
+  },
+  {
+    id: 4,
+    pic: pic4,
+    title: "Project Four",
     Github: (
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
@@ -56,21 +81,7 @@ const data = [
       </Link>
     ),
   },
-  {
-    id: 4,
-    pic: pic4,
-    title: "Project Four",
-    Github: (
-      <Link
-        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="https://github.com/Arezooshah/App-search"
-        target="_blank"
-      >
-        Github
-        <FaGithub size={30} />
-      </Link>
-    ),
-  },
+
 
   {
     id: 5,
@@ -101,7 +112,54 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+    
   },
+
+// {
+//   id: 7,
+//   pic: pic7,
+//   title: "Project seven",
+//   Github: (
+//     <Link
+//       className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+//       to="https://github.com/Arezooshah/App-search"
+//       target="_blank"
+//     >
+//       Github
+//       <FaGithub size={30} />
+//     </Link>
+//   ),
+// },
+//  {
+//     id: 8,
+//     pic: pic8,
+//     title: "Project eight",
+//     Github: (
+//       <Link
+//         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+//         to="https://github.com/Arezooshah/App-search"
+//         target="_blank"
+//       >
+//         Github
+//         <FaGithub size={30} />
+//       </Link>
+//     ),
+//   },
+//   {
+//     id: 9,
+//     pic: pic9,
+//     title: "Project nine",
+//     Github: (
+//       <Link
+//         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+//         to="https://github.com/Arezooshah/App-search"
+//         target="_blank"
+//       >
+//         Github
+//         <FaGithub size={30} />
+//       </Link>
+//     ),
+//   },
 ];
 
 export default function Project() {
@@ -116,6 +174,7 @@ export default function Project() {
             pic={item.pic}
             title={item.title}
             Github={item.Github}
+            Demo={item.Demo}
           />
         ))}
       </div>
