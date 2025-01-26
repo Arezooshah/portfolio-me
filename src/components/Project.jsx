@@ -25,6 +25,15 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+    Demo:(
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="https://marfa-website.netlify.app/"
+        target="_blank"
+      >
+                <FaExternalLinkSquareAlt size={30} />
+      </Link>
+    )
   },
   {
     id: 2,
@@ -40,6 +49,15 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+    Demo:(
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="#"
+        target="_blank"
+      >
+                <FaExternalLinkSquareAlt size={30} />
+      </Link>
+    )
    
   },
   {
@@ -80,6 +98,15 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+    Demo:(
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="https://appsearch-modise.netlify.app/"
+        target="_blank"
+      >
+                <FaExternalLinkSquareAlt size={30} />
+      </Link>
+    )
   },
 
 
@@ -97,6 +124,15 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+    Demo:(
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="#"
+        target="_blank"
+      >
+                <FaExternalLinkSquareAlt size={30} />
+      </Link>
+    )
   },
   {
     id: 6,
@@ -112,8 +148,18 @@ const data = [
         <FaGithub size={30} />
       </Link>
     ),
+    Demo:(
+      <Link
+        className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
+        to="https://khazar-site.netlify.app/"
+        target="_blank"
+      >
+                <FaExternalLinkSquareAlt size={30} />
+      </Link>
+    )
+  }
     
-  },
+  
 
 // {
 //   id: 7,
