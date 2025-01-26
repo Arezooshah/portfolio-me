@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const ProjectItems = ({ pic, title, Github }) => {
+const ProjectItems = ({ pic, title, Github,Demo}) => {
   return (
     <div
       // name="projects"
@@ -15,9 +15,10 @@ const ProjectItems = ({ pic, title, Github }) => {
       <div className="gap-2 space-x-5 grid grid-cols-2">
         <button className="lg:block md:hidden hover:bg-gray-800 p-2 md:p-4 rounded-full ring-1 md:w-32 text-xl :md:text-xl hover:text-white transition">
           {Github}
+          
         </button>
-        <button className="hover:bg-gray-800 p-3 md:p-4 rounded-full ring-1 md:w-32 text-xl hover:text-white transition">
-          Live-Demo
+        <button className="flex justify-center hover:bg-gray-800 p-3 md:p-4 rounded-full ring-1 md:w-32 text-xlx er:text-white transition">
+         Demo{ Demo}
         </button>
       </div>
     </div>
