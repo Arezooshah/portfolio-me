@@ -52,7 +52,7 @@ const data = [
     Demo:(
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="#"
+        to="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcX2DaRznXBwZ-uEG93hxftALvjqCAA-zax5B4WvJ_8osnIjTBG1XGGezQ0QRHqTNjios&usqp=CAU"
         target="_blank"
       >
                 <FaExternalLinkSquareAlt size={30} />
@@ -127,7 +127,8 @@ const data = [
     Demo:(
       <Link
         className="flex justify-around items-center w-full h-full text-gray-800 hover:text-white transition"
-        to="#"
+        to="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcX2DaRznXBwZ-uEG93hxftALvjqCAA-zax5B4WvJ_8osnIjTBG1XGGezQ0QRHqTNjios&usqp=CAU"
+
         target="_blank"
       >
                 <FaExternalLinkSquareAlt size={30} />
